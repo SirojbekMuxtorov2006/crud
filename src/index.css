@@ -1,0 +1,97 @@
+/* App.css */
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #41b132;
+	margin: 0;
+	padding: 2rem;
+	color: #333;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	text-align: center;
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+	color: #1a73e8;
+}
+
+.form {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.form input {
+	padding: 0.6rem;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	transition: all 0.2s;
+}
+
+.form input:focus {
+	border-color: #1a73e8;
+	outline: none;
+}
+
+.btn {
+	grid-column: span 2;
+	padding: 0.7rem;
+	background-color: #1a73e8;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.btn:hover {
+	background-color: #155ab6;
+}
+
+.employee-table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: white;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.employee-table th,
+.employee-table td {
+	padding: 0.75rem;
+	border-bottom: 1px solid #eee;
+	text-align: left;
+}
+
+.employee-table th {
+	background-color: #f1f3f5;
+	font-weight: 600;
+	color: #555;
+}
+
+.employee-table tbody tr:hover {
+	background-color: #f9fbfc;
+}
+
+.btn.edit {
+	background-color: #fbbc05;
+	margin-right: 0.5rem;
+}
+
+.btn.edit:hover {
+	background-color: #e0a800;
+}
+
+.btn.delete {
+	background-color: #ea4335;
+}
+
+.btn.delete:hover {
+	background-color: #cc392d;
+}
